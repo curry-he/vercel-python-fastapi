@@ -7,7 +7,7 @@ import json
 
 router = APIRouter()
 
-@router.post("/")
+@router.post("/silicon/v1/chat/completions")
 async def generate_image(request: Request):
     try:
         body = await request.json()
